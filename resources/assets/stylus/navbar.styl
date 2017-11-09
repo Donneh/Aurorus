@@ -1,0 +1,42 @@
+.navbar {
+    background: #FFFFFF;
+    border-bottom: 1px solid #F5F5F5;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    color: primary-color;
+    font-family: "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace
+    font-weight: bold;
+}
+
+
+
+.nav-item {
+    margin: 0 10px;
+
+    a {
+        color: #212121;
+
+        &:hover {
+            color: #000000;
+            margin-bottom: -1px;
+            border-bottom: 1px solid primary-color;
+        }
+    }
+
+    .signup {
+        background: secondary-color;
+        color: #FFFFFF;
+        border-radius: 5px;
+        padding: 10px;
+
+        &:hover {
+            background: secondary-color-lighter;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+#container {
+  min-height: calc(100vh - 200px);
+}
+.navbar {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.post_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post_item {
+  margin: 10px 0;
+  flex-direction: column;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+footer {
+  align-items: center;
+  background: linear-gradient(to bottom right, #ffdab9, #ab5d95);
+  color: #5a2bf2;
+  display: flex;
+  height: 200px;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 40px;
+}
+
+.footer-nav a {
+  color: #878dff;
+  font-size: 1.2em;
+  margin: 0 20px;
+}
