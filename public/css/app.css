@@ -1,5 +1,5 @@
 #container {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 220px);
 }
 .navbar {
   background: #fff;
@@ -34,6 +34,9 @@
   color: #fff;
   margin-bottom: 0;
   border-bottom: none;
+}
+h2 {
+  font-size: 1.2em;
 }
 .post_grid {
   height: 400px;
@@ -96,7 +99,7 @@
 }
 .post_item a.title {
   color: #000;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-bottom: 10px;
   font-weight: bold;
 }
@@ -133,6 +136,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: 200px;
+  margin-top: 20px;
   text-align: center;
 }
 .footer-nav {
