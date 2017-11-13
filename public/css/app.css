@@ -12,24 +12,24 @@
   font-family: "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace;
   font-weight: bold;
 }
-.nav-item {
+.nav-item:not(.dropdown-item) {
   margin: 0 10px;
 }
-.nav-item a {
+.nav-item:not(.dropdown-item) a {
   color: #212121;
 }
-.nav-item a:hover {
+.nav-item:not(.dropdown-item) a:hover {
   color: #000;
   margin-bottom: -1px;
   border-bottom: 1px solid #651fff;
 }
-.nav-item .signup {
+.nav-item:not(.dropdown-item) .signup {
   background: #d61fff;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
 }
-.nav-item .signup:hover {
+.nav-item:not(.dropdown-item) .signup:hover {
   background: #e22dff;
   color: #fff;
   margin-bottom: 0;

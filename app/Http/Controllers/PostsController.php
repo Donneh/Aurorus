@@ -35,7 +35,7 @@ class PostsController extends Controller
 
     public function popular(Posts $posts)
     {
-        dd($posts->all());
+        $posts->popular();
         return view('posts.popular');
     }
 

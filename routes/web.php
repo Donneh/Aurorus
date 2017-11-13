@@ -17,8 +17,11 @@ Route::get('posts/{post}', 'PostsController@show');
 Route::post('posts/{post}/comments', 'CommentsController@store');
 
 Route::get('/popular', 'PostsController@popular');
+Route::get('/browse', 'PostsController@index');
 
 Route::get('/posts/tags/{tag}', 'TagsController@index');
+
+Route::get('/users/{user}', 'UsersController@show');
 
 Route::get('tasks', 'TasksController@index');
 Route::get('tasks/{task}', 'TasksController@show');

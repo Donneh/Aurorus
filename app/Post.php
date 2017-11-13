@@ -22,6 +22,18 @@ class Post extends Model
         }
     }
 
+    /**
+     * Scope a query to only include popular users.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopePopular($query)
+    {
+        $most_views = Post::max('views');
+        return $query->orderByRaw("(views / {$most_views}) * 5 desc");
+    }
+
     public static function archives()
     {
         return static::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')
